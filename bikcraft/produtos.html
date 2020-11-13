@@ -7,172 +7,211 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/grid.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/produtos.css">
+    <link rel="stylesheet" href="css/produtos.css" />
+    <link rel="stylesheet" href="css/responsivo.css" />
     <title>Bikcraft - Produtos</title>
   </head>
   <body>
-    
-      <header class="header">
+    <header class="header">
+      <div class="container">
+        <a href="index.html" class="grid-4">
+          <img src="./img/bikcraft.svg" alt="Logo" />
+        </a>
+        <nav class="header_menu grid-12">
+          <ul>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a class="menu_ativo" href="produtos.html">Produtos</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="introducao-interna interna_produtos">
+      <div class="container">
+        <h1>produtos</h1>
+        <p>conheça todos os nossos produtos</p>
+      </div>
+    </section>
+
+    <section class="container produto_item">
+      <div class="grid-11">
+        <img
+          src="./img/produtos/bikcraft-passeio-1.jpg"
+          alt="Bikcraft passeio 1"
+        />
+        <h2>passeio</h2>
+      </div>
+      <div class="grid-5 produto_icone">
+        <img src="./img/produtos/passeio.svg" alt="icone-passeio" />
+      </div>
+      <div class="grid-8">
+        <img
+          src="./img/produtos/bikcraft-passeio-2.jpg"
+          alt="Bikcraft passeio 2"
+        />
+      </div>
+      <div class="grid-8 produto_info">
+        <p>
+          No mundo atual, a contínua expansão de nossa atividade cumpre um papel
+          essencial na formula da gestão inovadora da qual fazemos parte,
+          inovadora da qual fazemos parte.
+        </p>
+        <ul>
+          <li>Conforto</li>
+          <li>velocidade</li>
+          <li>Design</li>
+          <li>Versatilidade</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="container produto_item">
+      <div class="grid-11">
+        <img
+          src="./img/produtos/bikcraft-esporte-1.jpg"
+          alt="Bikcraft esporte 1"
+        />
+        <h2>esporte</h2>
+      </div>
+      <div class="grid-5 produto_icone">
+        <img src="./img/produtos/esporte.svg" alt="icone-esporte" />
+      </div>
+      <div class="grid-8">
+        <img
+          src="./img/produtos/bikcraft-esporte-2.jpg"
+          alt="Bikcraft esporte 2"
+        />
+      </div>
+      <div class="grid-8 produto_info">
+        <p>
+          No mundo atual, a contínua expansão de nossa atividade cumpre um papel
+          essencial na formula da gestão inovadora da qual fazemos parte,
+          inovadora da qual fazemos parte.
+        </p>
+        <ul>
+          <li>Conforto</li>
+          <li>velocidade</li>
+          <li>Design</li>
+          <li>Versatilidade</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="container produto_item">
+      <div class="grid-11">
+        <img src="./img/produtos/bikcraft-retro-1.jpg" alt="Bikcraft retro 1" />
+        <h2>retro</h2>
+      </div>
+      <div class="grid-5 produto_icone">
+        <img src="./img/produtos/retro.svg" alt="icone-retro" />
+      </div>
+      <div class="grid-8">
+        <img src="./img/produtos/bikcraft-retro-2.jpg" alt="Bikcraft retro 2" />
+      </div>
+      <div class="grid-8 produto_info">
+        <p>
+          No mundo atual, a contínua expansão de nossa atividade cumpre um papel
+          essencial na formula da gestão inovadora da qual fazemos parte,
+          inovadora da qual fazemos parte.
+        </p>
+        <ul>
+          <li>Conforto</li>
+          <li>velocidade</li>
+          <li>Design</li>
+          <li>Versatilidade</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="orcamento">
+      <div class="container">
+        <h2 class="subtitulo">Orçamento</h2>
+        <form id="form_orcamento" class="form grid-8" action="">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" />
+          <label for="email">E-mail</label>
+          <input type="text" id="email" />
+          <label for="tel">Telefone</label>
+          <input type="text" id="tel" />
+          <label for="espec">Especificações</label>
+          <textarea id="espec"></textarea>
+          <button class="btn" type="submit">Enviar</button>
+        </form>
+        <div class="orcamento_dados grid-8">
+          <h3>Dados</h3>
+          <span>+55 21 93232 3232</span>
+          <span>orcamento@bikcraft.com</span>
+          <h3>Monte a sua bikcraft</h3>
+          <p>Escolha as Especificações:</p>
+          <ul>
+            <li>- Cores</li>
+            <li>- Estilo</li>
+            <li>- Medidas</li>
+            <li>- Acessórios</li>
+            <li>- E Outros</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="quebra">
+      <blockquote class="quote-externo container">
+        <p>
+          "O verdadeiro segredo da felicidade está em ter um genuíno interesse
+          por todos os detalhes da vida cotidiana."
+        </p>
+        <cite>WILLIAM MORRIS</cite>
+      </blockquote>
+    </section>
+
+    <footer>
+      <div class="footer">
         <div class="container">
-          <a href="index.html" class="grid-4">
-            <img src="./img/bikcraft.svg" alt="Logo" />
-          
-          <nav class="header_menu grid-12">
+          <div class="grid-8 footer_historia">
+            <h3>Nossa história</h3>
+            <p>
+              O verdadeiro segredo da felicidade está em ter um genuíno
+              interesse por todos os detalhes da vida cotidiana, todos os
+              detalhes da vida cotidiana, todos os detalhes da vida cotidiana
+            </p>
+          </div>
+          <div class="grid-4 footer_contato">
+            <h3>Contato</h3>
             <ul>
-              <li><a href="sobre.html">Sobre</a></li>
-              <li><a class="menu_ativo"href="produtos.html">Produtos</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="contato.html">Contato</a></li>
+              <li>- 21 23232-4343</li>
+              <li>- contato@bikcraft.com</li>
+              <li>- Botafogo - RJ</li>
             </ul>
-          </nav>
-        </div>
-      </header>
-
-      <section class="introducao-interna interna_produtos">
-        <div class="container">
-          <h1>produtos</h1>
-          <p>conheça todos os nossos produtos</p>
-        </div>
-      </section>
-  
-      <section class="container produto_item">
-        <div class="grid-11">
-          <img  src="./img/produtos/bikcraft-passeio-1.jpg" alt="Bikcraft passeio 1">
-          <h2>passeio</h2>
-        </div>
-        <div class="grid-5 produto_icone">
-          <img src="./img/produtos/passeio.svg" alt="icone-passeio">
-        </div>
-        <div class="grid-8">
-          <img src="./img/produtos/bikcraft-passeio-2.jpg" alt="Bikcraft passeio 2">
-        </div>
-        <div class="grid-8 produto_info">
-          <p>No mundo atual, a contínua expansão de nossa atividade cumpre um papel essencial na formula da gestão inovadora da qual fazemos parte, inovadora da qual fazemos parte.
-          </p>
-          <ul>
-            <li>Conforto</li>
-            <li>velocidade</li>
-            <li>Design</li>
-            <li>Versatilidade</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="container produto_item">
-        <div class="grid-11">
-          <img  src="./img/produtos/bikcraft-esporte-1.jpg" alt="Bikcraft esporte 1">
-          <h2>esporte</h2>
-        </div>
-        <div class="grid-5 produto_icone">
-          <img src="./img/produtos/esporte.svg" alt="icone-esporte">
-        </div>
-        <div class="grid-8">
-          <img src="./img/produtos/bikcraft-esporte-2.jpg" alt="Bikcraft esporte 2">
-        </div>
-        <div class="grid-8 produto_info">
-          <p>No mundo atual, a contínua expansão de nossa atividade cumpre um papel essencial na formula da gestão inovadora da qual fazemos parte, inovadora da qual fazemos parte.
-          </p>
-          <ul>
-            <li>Conforto</li>
-            <li>velocidade</li>
-            <li>Design</li>
-            <li>Versatilidade</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="container produto_item">
-        <div class="grid-11">
-          <img  src="./img/produtos/bikcraft-retro-1.jpg" alt="Bikcraft retro 1">
-          <h2>retro</h2>
-        </div>
-        <div class="grid-5 produto_icone">
-          <img src="./img/produtos/retro.svg" alt="icone-retro">
-        </div>
-        <div class="grid-8">
-          <img src="./img/produtos/bikcraft-retro-2.jpg" alt="Bikcraft retro 2">
-        </div>
-        <div class="grid-8 produto_info">
-          <p>No mundo atual, a contínua expansão de nossa atividade cumpre um papel essencial na formula da gestão inovadora da qual fazemos parte, inovadora da qual fazemos parte.
-          </p>
-          <ul>
-            <li>Conforto</li>
-            <li>velocidade</li>
-            <li>Design</li>
-            <li>Versatilidade</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="orcamento">
-        <div class="container">
-          <h2 class="subtitulo">Orçamento</h2>
-          <form id="form_orcamento" class="form grid-8"action="">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome">
-            <label for="email">E-mail</label>
-            <input type="text" id="email">
-            <label for="tel">Telefone</label>
-            <input type="text" id="tel">
-            <label for="espec">Especificações</label>
-            <textarea  id="espec"></textarea>
-            <button class="btn" type="submit">Enviar</button>
-          </form>
-          <div class="orcamento_dados grid-8">
-            <h3>Dados</h3>
-            <span>+55 21 93232 3232</span>
-            <span>orcamento@bikcraft.com</span>
-            <h3>Monte a sua bikcraft</h3>
-            <p>Escolha as Especificações: </p>
+          </div>
+          <div class="grid-4 footer_redes_sociais">
+            <h3>Redes Sociais</h3>
             <ul>
-              <li>- Cores</li>
-              <li>- Estilo</li>
-              <li>- Medidas</li>
-              <li>- Acessórios</li>
-              <li>- E Outros</li>
+              <li>
+                <a href="https://www.facebook.com" target="_blank"
+                  ><img src="./img/redes-sociais/facebook.svg" alt="facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com" target="_blank"
+                  ><img src="./img/redes-sociais/instagram.svg" alt="instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com" target="_blank"
+                  ><img src="./img/redes-sociais/twitter.svg" alt="twitter"
+                /></a>
+              </li>
             </ul>
           </div>
         </div>
-      </section>
-
-      <section class="quebra">
-          <blockquote class="quote-externo container">
-            <p>"O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana."</p>
-            <cite>WILLIAM MORRIS</cite>
-          </blockquote>
-      </section>
-
-      <footer>
-        <div class="footer">
-          <div class="container">
-            <div class="grid-8 footer_historia">
-              <h3>Nossa história</h3>
-              <p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana, todos os detalhes da vida cotidiana, todos os detalhes da vida cotidiana</p>
-            </div>
-            <div class="grid-4 footer_contato">
-              <h3>Contato</h3>
-              <ul>
-                <li> - 21 23232-4343</li>
-                <li> - contato@bikcraft.com</li>
-                <li> - Botafogo - RJ</li>
-              </ul>
-            </div>
-            <div class="grid-4 footer_redes_sociais">
-              <h3>Redes Sociais</h3>
-              <ul>
-                <li><a href="https://www.facebook.com" target="_blank"><img src="./img/redes-sociais/facebook.svg" alt="facebook"></a></li>
-                <li><a href="https://www.instagram.com" target="_blank"><img src="./img/redes-sociais/instagram.svg" alt="instagram"></a></li>
-                <li><a href="https://www.twitter.com" target="_blank"><img src="./img/redes-sociais/twitter.svg" alt="twitter"></a></li>
-              </ul>
-            </div>
-          </div>
+      </div>
+      <div class="copy">
+        <div class="container">
+          <p class="grid-16">Bikcraft 2020 - alguns direitos reservados.</p>
         </div>
-        <div class="copy">
-          <div class="container">
-            <p class="grid-16">Bikcraft 2020 - alguns direitos reservados.</p>
-          </div>
-        </div>
-      </footer>
-
+      </div>
+    </footer>
   </body>
 </html>
