@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/portfolio.css" />
     <link rel="stylesheet" href="css/responsivo.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
     <title>Bikcraft - Portfolio</title>
   </head>
   <body>
@@ -30,11 +33,13 @@
 
     <section class="introducao-interna interna_portfolio">
       <div class="container">
-        <h1>portfolio</h1>
-        <p>Conheça os projetos que amamos mostrar</p>
+        <h1 data-anime="500" class="fadeInDown">portfolio</h1>
+        <p data-anime="800" class="fadeInDown">
+          Conheça os projetos que amamos mostrar
+        </p>
       </div>
     </section>
-    <section class="container">
+    <section class="container fadeInUp" data-anime="1000" data-slide="quote">
       <blockquote class="quote_clientes">
         <p>
           "No mundo atual, a contínua expansão de nossa atividade cumpre um
@@ -43,9 +48,24 @@
         </p>
         <cite>Barbara Moss</cite>
       </blockquote>
+      <blockquote class="quote_clientes">
+        <p>
+          "Nada melhor do que dar um rolê com a minha Bikcraft na orla. Essa é a
+          minha companheira mais fiel, nunca me traiu e está sempre a minha
+          disposição.”
+        </p>
+        <cite>Matheus Lucas</cite>
+      </blockquote>
+      <blockquote class="quote_clientes">
+        <p>
+          “Você quer passar o resto da sua vida vendendo água com açúcar ou quer
+          uma chance de mudar o mundo?”
+        </p>
+        <cite>Steve Jobs</cite>
+      </blockquote>
     </section>
-    <section class="portfolio">
-      <div class="container">
+    <section class="portfolio" data-anime="1200">
+      <div class="container" data-slide="portfolio">
         <ul class="portfolio_lista">
           <li class="grid-8">
             <img src="./img/portfolio/passeio.jpg" alt="bikcraft passeio" />
@@ -57,16 +77,28 @@
             <img src="./img/portfolio/esporte.jpg" alt="bikcraft esporte" />
           </li>
         </ul>
+        <ul class="portfolio_lista">
+          <li class="grid-8">
+            <img src="./img/portfolio/retro.jpg" alt="bikcraft retro" />
+          </li>
+          <li class="grid-8">
+            <img src="./img/portfolio/passeio.jpg" alt="bikcraft passeio" />
+          </li>
+
+          <li class="grid-16">
+            <img src="./img/portfolio/esporte.jpg" alt="bikcraft esporte" />
+          </li>
+        </ul>
       </div>
     </section>
 
     <section class="quebra">
       <blockquote class="quote-externo container">
         <p>
-          "O verdadeiro segredo da felicidade está em ter um genuíno interesse
-          por todos os detalhes da vida cotidiana."
+          “Se você traçar metas absurdamente altas e falhar, seu fracasso será
+          muito melhor que o sucesso de todos”
         </p>
-        <cite>WILLIAM MORRIS</cite>
+        <cite>James Cameron</cite>
       </blockquote>
     </section>
 
@@ -118,4 +150,7 @@
       </div>
     </footer>
   </body>
+  <script src="./js/simple-slide.js"></script>
+  <script src="./js/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 </html>
