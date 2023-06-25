@@ -1,11 +1,22 @@
+:root {
+  --cor-primaria: #e21;
+  --cor-primaria-escura: #900;
+  --fundo-1: #f7f7f7;
+  --fundo-2: #ffffff;
+  --texto: #000000;
+  --subtitulo: rgba(0, 0, 0, 0.2);
+  --onda: url("./img/onda.svg");
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
-  background: #f7f7f7;
+  background: var(--fundo-1);
   display: grid;
   gap: 3.75rem;
   justify-items: center;
   margin-top: 3.75rem;
+  color: var(--texto);
 }
 .header {
   display: grid;
@@ -48,10 +59,10 @@ p {
 
 .menu a {
   display: block;
-  background: #ffffff;
+  background: var(--fundo-2);
   padding: 15px 30px;
   border-radius: 4px;
-  color: #000000;
+  color: var(--texto);
   text-transform: uppercase;
   border: 2px solid transparent;
 }
@@ -66,7 +77,7 @@ p {
 }
 
 .introducao {
-  background: #fff;
+  background: var(--fundo-2);
   padding: 2.5rem;
   text-align: right;
   position: relative;
@@ -77,7 +88,7 @@ p {
 }
 .introducao::before {
   content: "";
-  background: #e21;
+  background: var(--cor-primaria);
   width: 4rem;
   height: 5px;
   position: absolute;
@@ -92,7 +103,7 @@ p {
 .detalhe {
   width: 60px;
   height: 4px;
-  background: #e21;
+  background: var(--cor-primaria);
   position: absolute;
   top: 1.875rem;
   right: -1.875rem;
@@ -101,33 +112,33 @@ p {
   font-size: 2rem;
 }
 .botao {
-  background: #e21;
-  color: #fff;
+  background: var(--cor-primaria);
+  color: #ffffff;
   padding: 15px 30px;
   border-radius: 4px;
   text-transform: uppercase;
 }
 
 .botao:hover {
-  background: #900;
+  background: var(--cor-primaria-escura);
 }
 .subtitulo {
   font-size: 4rem;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.2);
+  color: var(--subtitulo);
   text-align: right;
   padding: 40px;
   align-self: center;
-  background: url("./img/onda.svg");
+  background: var(--onda);
 }
 
 .vantagens {
-  background: #fff;
+  background: var(--fundo-2);
   padding: 2.5rem;
 }
 
 .vantagens :nth-child(odd) {
-  background-color: #f7f7f7;
+  background-color: var(--fundo-1);
 }
 .vantagens-item {
   display: grid;
@@ -140,7 +151,7 @@ p {
   content: "";
   width: 3px;
   height: 100%;
-  background: #e21;
+  background: var(--cor-primaria);
   position: absolute;
 }
 .vantagens-item p {
@@ -148,14 +159,14 @@ p {
 }
 
 .rodape {
-  background: #fff;
+  background: var(--fundo-2);
   width: 100%;
   text-align: center;
   padding: 2.5rem;
   box-sizing: border-box;
 }
 .linha {
-  background-color: black;
+  background-color: var(--texto);
   width: 1.5rem;
   height: 0.2rem;
   margin: 0.3rem;
@@ -208,5 +219,29 @@ p {
   }
   .menu {
     display: none;
+  }
+}
+
+label {
+  display: block;
+}
+input {
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+input[required] {
+  background: blue;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cor-primaria: #e21;
+    --cor-primaria-escura: #900;
+    --fundo-1: #111;
+    --fundo-2: #000;
+    --texto: #fff;
+    --subtitulo: rgba(255, 255, 255, 0.2);
+    --onda: url("./img/onda-escura.svg");
   }
 }
